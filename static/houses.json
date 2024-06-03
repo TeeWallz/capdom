@@ -1,0 +1,36 @@
+[
+	{
+		"name": "House 1",
+		"price": 100000,
+		"location": "New York",
+		"bedrooms": 3,
+		"bathrooms": 2,
+		"area": 2000,
+		"coordinates": {
+			"latitude": 40.7128,
+			"longitude": 74.006
+		},
+		"images": {
+			"floorPlan": "https://picsum.photos/1920/1080",
+			"gallery": [
+				"https://picsum.photos/1920/1080",
+				"https://picsum.photos/1920/1081",
+				"https://picsum.photos/1920/1082"
+			]
+		},
+		"info": {
+			"en": {
+				"description": "This is a beautiful house in New York",
+				"features": ["Swimming Pool", "Garage", "Garden"]
+			},
+			"de": {
+				"description": "Dies ist ein schönes Haus in New York",
+				"features": ["Schwimmbad", "Garage", "Garten"]
+			},
+			"pl": {
+				"description": "To jest piękny dom w Nowym Jorku",
+				"features": ["Basen", "Garaż", "Ogród"]
+			}
+		}
+	}
+]
