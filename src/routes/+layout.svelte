@@ -3,7 +3,7 @@
 	import { t, locale } from 'svelte-i18n';
 	import { updateQueryParam, getQueryParam, loadTranslations } from '@/i18n/i18n';
 	import '@fortawesome/fontawesome-free/css/all.min.css';
-	import { animateScroll } from 'svelte-scrollto-element';
+	// import { animateScroll } from 'svelte-scrollto-element';
 
 	// getQueryParam(window, param)
 	let selectedLocale = getQueryParam(window, 'lang') || 'en';
@@ -46,7 +46,6 @@
 					class="border-b-2 border-transparent text-sm font-medium transition-colors hover:border-gray-100 hover:text-gray-900 dark:hover:border-gray-800 dark:hover:text-gray-50"
 					data-id="8"
 					href="#"
-					on:click={() => animateScroll.scrollTo({ element: '#index-header-anchor', offset: -30 })}
 				>
 					{@html $t('navigation.home')}
 				</a>
@@ -54,7 +53,6 @@
 					class="border-b-2 border-transparent text-sm font-medium transition-colors hover:border-gray-100 hover:text-gray-900 dark:hover:border-gray-800 dark:hover:text-gray-50"
 					data-id="9"
 					href="#"
-					on:click={() => animateScroll.scrollTo({ element: '#houses-anchor', offset: -80 })}
 				>
 					{@html $t('navigation.our_houses')}
 				</a>
@@ -62,7 +60,6 @@
 					class="border-b-2 border-transparent text-sm font-medium transition-colors hover:border-gray-100 hover:text-gray-900 dark:hover:border-gray-800 dark:hover:text-gray-50"
 					data-id="11"
 					href="#"
-					on:click={() => animateScroll.scrollTo({ element: '#contact-us-anchor', offset: -80 })}
 				>
 					{@html $t('navigation.contact_us')}
 				</a>

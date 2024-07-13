@@ -1,25 +1,7 @@
 <script lang="ts">
 	import { Button } from '$lib/components/ui/button';
-	import House from '$lib/components/house/House.svelte';
-	import { Tabs, TabsList, TabsTrigger, TabsContent } from '$lib/components/ui/tabs';
-	import Carousel from '$lib/components/carousel/Carousel.svelte';
-	import CardContent from '@/components/ui/card/card-content.svelte';
-	import { AspectRatio } from '@/components/ui/aspect-ratio';
-	import type { Hst } from '@histoire/plugin-svelte';
-	import { browser } from '$app/environment';
-
-	import { onMount } from 'svelte';
-	import Map from '$lib/components/map/Map.svelte';
-	import FloorPlan from '$lib/components/floorplan/FloorPlan.svelte';
-	import PhotoSwipe from '$lib/components/photoswipe/PhotoSwipe.svelte';
-	import PanZoom from '$lib/components/panzoom/PanZoom.svelte';
-	import InfoSide from '$lib/components/house/House.svelte';
 	import HousesSection from '$lib/components/house/HousesSection.svelte';
 	import ContactUs from '$lib/components/contactus/ContactUs.svelte';
-
-	import { register, init, getLocaleFromNavigator, addMessages, locale } from 'svelte-i18n';
-	import { t, dictionary, json } from 'svelte-i18n';
-	import { get } from 'svelte/store';
 	import AboutUs from '@/components/aboutus/AboutUs.svelte';
 	import IndexHeader from '@/components/header/IndexHeader.svelte';
 
