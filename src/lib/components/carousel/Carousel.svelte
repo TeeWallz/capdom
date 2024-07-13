@@ -8,7 +8,6 @@
 	import type { CarouselAPI } from '$lib/components/ui/carousel/context.js';
 
 	export let house;
-
 	let api: CarouselAPI;
 	let current = 0;
 	let count = 0;
@@ -43,10 +42,10 @@
 		<Carousel.Previous />
 		<Carousel.Next />
 	</Carousel.Root>
-	<div class="py-2 text-center text-sm text-muted-foreground">
-		{$t('image_label')}
+	<div class="text-muted-foreground py-2 text-center text-sm">
+		{$t('navigation.image_label')}
 		{current}
-		{$t('image_of_label')}
+		{$t('navigation.image_of_label')}
 		{count}
 	</div>
 </div>

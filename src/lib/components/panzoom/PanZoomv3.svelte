@@ -5,8 +5,10 @@
 	import '@fancyapps/ui/dist/panzoom/panzoom.css';
 	import '@fancyapps/ui/dist/panzoom/panzoom.toolbar.css';
 
+	export let house;
+
 	onMount(() => {
-		const container = document.getElementById('myPanzoom');
+		const container = document.getElementById('myPanzoom' + house.id);
 		const options = {
 			Toolbar: {
 				display: ['zoomIn', 'zoomOut', 'toggle1to1', 'toggleZoom', 'reset', 'toggleFS']
@@ -19,7 +21,7 @@
 </script>
 
 <div id="app" class="h-full w-full">
-	<div class="f-panzoom h-full w-full" id="myPanzoom">
+	<div class="f-panzoom h-full w-full" id={'myPanzoom' + house.id}>
 		<img
 			class="f-panzoom__content"
 			src="https://wpmedia.roomsketcher.com/content/uploads/2022/03/31095248/blue-green-2d-floor-plan.jpg"

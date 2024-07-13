@@ -1,17 +1,27 @@
 <script lang="ts">
-	export let house;
+	import { t } from 'svelte-i18n';
 	import HouseOverview from './HouseOverview.svelte';
+	export let house;
 </script>
 
 <div class="space-y-4">
-	<h1 class="text-4xl font-bold tracking-tighter">{house.name}</h1>
+	<h1 class="text-4xl font-bold tracking-tighter">
+		{house.name}
+	</h1>
 	<p class="text-gray-500 dark:text-gray-400">
-		Our luxury apartments offer the perfect blend of modern design, premium amenities, and
-		unbeatable location. Explore our available properties and find your new home today.
+		{house.description}
 	</p>
-	<div class="flex flex-col gap-2 min-[400px]:flex-row">
-		<a href="#" class="view-properties-button">View Properties</a>
-		<a href="#" class="contact-us-button">Contact Us</a>
-	</div>
-	<HouseOverview />
+	<p class="text-gray-500 dark:text-gray-400">
+		Address:
+		<a
+			href={`https://www.google.com/maps/place/${house.coordinates.latitude},${house.coordinates.longitude}`}
+			target="_blank"
+			rel="noopener noreferrer"
+			class="text-blue-500 dark:text-blue-400"
+		>
+			{house.address}
+			<i class="fas fa-external-link-alt"></i>
+		</a>
+	</p>
+	<HouseOverview {house} />
 </div>

@@ -1,15 +1,23 @@
 <script>
 	import '../app.pcss';
 	import { t, locale } from 'svelte-i18n';
-	import { updateQueryParam, getQueryParam } from '$lib/i18n/i18n_utils';
+	import { updateQueryParam, getQueryParam, loadTranslations } from '@/i18n/i18n';
+	import '@fortawesome/fontawesome-free/css/all.min.css';
+	import { animateScroll } from 'svelte-scrollto-element';
 
-	let selectedLocale = getQueryParam('lang') || 'en';
+	// getQueryParam(window, param)
+	let selectedLocale = getQueryParam(window, 'lang') || 'en';
 
 	function changeLocale(newLocale) {
 		selectedLocale = newLocale;
 		locale.set(newLocale);
-		updateQueryParam('lang', newLocale);
+		updateQueryParam(window, 'lang', newLocale);
 	}
+
+	// Receive data from +layout.ts
+	export let data;
+	const translations = data.translations;
+	loadTranslations(translations);
 </script>
 
 <nav class="fixed inset-x-0 top-0 z-50 bg-white shadow dark:bg-gray-950" data-id="1">
@@ -31,33 +39,32 @@
 					><path d="m7.5 4.27 9 5.15"></path><path
 						d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"
 					></path><path d="m3.3 7 8.7 5 8.7-5"></path><path d="M12 22V12"></path></svg
-				><span data-id="6">Acme Inc</span></a
+				><span data-id="6">Capdom</span></a
 			>
 			<nav class="ml-auto flex items-center space-x-4" data-id="7">
 				<a
 					class="border-b-2 border-transparent text-sm font-medium transition-colors hover:border-gray-100 hover:text-gray-900 dark:hover:border-gray-800 dark:hover:text-gray-50"
 					data-id="8"
 					href="#"
+					on:click={() => animateScroll.scrollTo({ element: '#index-header-anchor', offset: -30 })}
 				>
-					Home
-				</a><a
+					{@html $t('navigation.home')}
+				</a>
+				<a
 					class="border-b-2 border-transparent text-sm font-medium transition-colors hover:border-gray-100 hover:text-gray-900 dark:hover:border-gray-800 dark:hover:text-gray-50"
 					data-id="9"
 					href="#"
+					on:click={() => animateScroll.scrollTo({ element: '#houses-anchor', offset: -80 })}
 				>
-					Features
-				</a><a
-					class="border-b-2 border-transparent text-sm font-medium transition-colors hover:border-gray-100 hover:text-gray-900 dark:hover:border-gray-800 dark:hover:text-gray-50"
-					data-id="10"
-					href="#"
-				>
-					Pricing
-				</a><a
+					{@html $t('navigation.our_houses')}
+				</a>
+				<a
 					class="border-b-2 border-transparent text-sm font-medium transition-colors hover:border-gray-100 hover:text-gray-900 dark:hover:border-gray-800 dark:hover:text-gray-50"
 					data-id="11"
 					href="#"
+					on:click={() => animateScroll.scrollTo({ element: '#contact-us-anchor', offset: -80 })}
 				>
-					Contact
+					{@html $t('navigation.contact_us')}
 				</a>
 				<select bind:value={selectedLocale} on:change={() => changeLocale(selectedLocale)}>
 					<option value="en">English</option>

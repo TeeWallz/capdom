@@ -1,0 +1,17 @@
+{
+	"carousel_tab_label": "Karussell",
+	"floor_plan_tab_label": "Grundriss",
+	"map_tab_label": "Karte",
+	"image_label": "Bild",
+	"image_of_label": "von",
+	"rooms": "Räume",
+	"year_built": "Jahr",
+	"bathrooms": "Badezimmer",
+	"property_type": "Typ",
+	"bedrooms": "Schlafzimmer",
+	"area": "Fläche",
+	"garages": "Garagen",
+	"our_houses": "Unsere <span class='text-primary'>Häuser</span>",
+	"contact_us": "Kontaktiere uns",
+	"home": "Zuhause"
+}

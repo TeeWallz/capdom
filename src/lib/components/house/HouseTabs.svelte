@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { t } from 'svelte-i18n';
+	import { t, dictionary, json } from 'svelte-i18n';
 	import { Button } from '$lib/components/ui/button';
 	import { Tabs, TabsList, TabsTrigger, TabsContent } from '$lib/components/ui/tabs';
 	import Carousel from '$lib/components/carousel/Carousel.svelte';
@@ -15,14 +15,15 @@
 	import PanZoom3 from '$lib/components/panzoom/PanZoomv3.svelte';
 
 	export let house;
+	export let houseData;
 </script>
 
 <div>
 	<Tabs class="w-full">
 		<TabsList class="grid grid-cols-3 gap-2">
-			<TabsTrigger value="carousel">{$t('carousel_tab_label')}</TabsTrigger>
-			<TabsTrigger value="floorplan">{$t('floor_plan_tab_label')}</TabsTrigger>
-			<TabsTrigger value="map">{$t('map_tab_label')}</TabsTrigger>
+			<TabsTrigger value="carousel">{$t('navigation.carousel_tab_label')}</TabsTrigger>
+			<TabsTrigger value="floorplan">{$t('navigation.floor_plan_tab_label')}</TabsTrigger>
+			<TabsTrigger value="map">{$t('navigation.map_tab_label')}</TabsTrigger>
 		</TabsList>
 		<TabsContent value="carousel">
 			<AspectRatio ratio={16 / 9} class="bg-muted">
@@ -39,8 +40,8 @@
             /> -->
 			<div class="space-y-4">
 				<AspectRatio ratio={16 / 9} class="bg-muted">
-					<div id="floorplan" class="img-wrapper h-full w-full overflow-hidden rounded-lg bg-muted">
-						<PanZoom3 />
+					<div id="floorplan" class="img-wrapper bg-muted h-full w-full overflow-hidden rounded-lg">
+						<PanZoom3 {house} />
 					</div>
 				</AspectRatio>
 			</div>
@@ -48,7 +49,7 @@
 		<TabsContent value="map">
 			<div class="space-y-4">
 				<AspectRatio ratio={16 / 9} class="bg-muted" id="ass">
-					<div id="map" class="h-full w-full rounded-lg bg-muted">
+					<div id="map" class="bg-muted h-full w-full rounded-lg">
 						<Map />
 					</div>
 				</AspectRatio>

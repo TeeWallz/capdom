@@ -1,0 +1,92 @@
+[
+	{
+		"id": 1,
+		"name": "House 1",
+		"price": 100000,
+		"location": "New York",
+		"rooms": 3,
+		"bathrooms": 2,
+		"year_built": 2020,
+		"bedrooms": 1,
+		"garages": 1,
+		"area": 53,
+		"address": "al. Generała Józefa Hallera 180-184, 53-203 Wrocław",
+		"coordinates": {
+			"latitude": 51.09306985492985,
+			"longitude": 16.98100106379682
+		},
+		"images": {
+			"floorPlan": "https://www.hauseit.com/wp-content/uploads/2019/08/Sample-Hauseit-Custom-2D-Floorplan-1.jpg",
+			"gallery": [
+				"https://plus.unsplash.com/premium_photo-1675324517011-24d2c741c22f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+				"https://images.unsplash.com/photo-1491357492920-d2979986a84e?q=80&w=1966&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+				"https://images.unsplash.com/photo-1605146769289-440113cc3d00?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+			]
+		},
+		"info": {
+			"en": {
+				"name": "New York House 1",
+				"description": "This is a beautiful house in New York",
+				"features": ["Swimming Pool", "Garage", "Garden"],
+				"property_type": "Single Family Home"
+			},
+			"de": {
+				"name": "New York Haus 1",
+				"description": "Dies ist ein schönes Haus in New York",
+				"features": ["Schwimmbad", "Garage", "Garten"],
+				"property_type": "Einfamilienhaus"
+			},
+			"pl": {
+				"name": "New York Dom 1",
+				"description": "To jest piękny dom w Nowym Jorku",
+				"features": ["Basen", "Garaż", "Ogród"],
+				"property_type": "Jednorodzinny"
+			}
+		}
+	},
+	{
+		"id": 2,
+		"name": "House 2",
+		"price": 100000,
+		"location": "New York",
+		"rooms": 3,
+		"bathrooms": 2,
+		"year_built": 2020,
+		"bedrooms": 1,
+		"garages": 1,
+		"area": 53,
+		"address": "al. Generała Józefa Hallera 180-184, 53-203 Wrocław",
+		"coordinates": {
+			"latitude": 51.09306985492985,
+			"longitude": 16.98100106379682
+		},
+		"images": {
+			"floorPlan": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fhome3ds.com%2Finteger-scelerisque-diam-vitae-aliquam-fingilla-10%2F&psig=AOvVaw3qdAd10EzNupo9_XTolzfx&ust=1720638131754000&source=images&opi=89978449",
+			"gallery": [
+				"https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+				"https://images.unsplash.com/photo-1512916194211-3f2b7f5f7de3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+				"https://images.unsplash.com/photo-1522050212171-61b01dd24579?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+			]
+		},
+		"info": {
+			"en": {
+				"name": "New York House 2",
+				"description": "This is a beautiful house in New York",
+				"features": ["Swimming Pool", "Garage", "Garden"],
+				"property_type": "Single Family Home"
+			},
+			"de": {
+				"name": "New York Haus 2",
+				"description": "Dies ist ein schönes Haus in New York",
+				"features": ["Schwimmbad", "Garage", "Garten"],
+				"property_type": "Einfamilienhaus"
+			},
+			"pl": {
+				"name": "New York Dom 2",
+				"description": "To jest piękny dom w Nowym Jorku",
+				"features": ["Basen", "Garaż", "Ogród"],
+				"property_type": "Jednorodzinny"
+			}
+		}
+	}
+]

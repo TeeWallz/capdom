@@ -1,0 +1,239 @@
+{
+	"languages": [
+		{
+			"code": "en",
+			"name": "English"
+		},
+		{
+			"code": "de",
+			"name": "Deutsch"
+		},
+		{
+			"code": "pl",
+			"name": "Polski"
+		}
+	],
+	"site_translation": {
+		"en": {
+			"navigation": {
+				"carousel_tab_label": "Carousel",
+				"floor_plan_tab_label": "Floor Plan",
+				"map_tab_label": "Map",
+				"image_label": "Image",
+				"image_of_label": "of",
+				"rooms": "Rooms",
+				"year_built": "Year Built",
+				"bathrooms": "Bathrooms",
+				"property_type": "Property Type",
+				"bedrooms": "Bedrooms",
+				"area": "Area",
+				"garages": "Garages",
+				"our_houses": "Our <span class='text-primary'>Houses</span>",
+				"contact_us": "Contact Us",
+				"home": "Home",
+				"about_us": {
+					"title": "About Us",
+					"content": "Capdom is a leading property developer in Poland and Germany, specializing in exceptional residential and commercial properties. Committed to the highest standards of quality and sustainability, Capdom's mission is to develop innovative projects that enhance the communities they serve. With a dedicated team of experts, Capdom excels in every aspect of their work, from planning and design to construction and customer service."
+				},
+				"header": "Capdom Real Estate",
+				"subheader": "The best place to find your <span class=\"text-green-700\">dream</span> home"
+			}
+		},
+		"de": {
+			"navigation": {
+				"carousel_tab_label": "Karussell",
+				"floor_plan_tab_label": "Grundriss",
+				"map_tab_label": "Karte",
+				"image_label": "Bild",
+				"image_of_label": "von",
+				"rooms": "Zimmer",
+				"year_built": "Baujahr",
+				"bathrooms": "Badezimmer",
+				"property_type": "Immobilienart",
+				"bedrooms": "Schlafzimmer",
+				"area": "Fläche",
+				"garages": "Garagen",
+				"our_houses": "Unsere <span class='text-primary'>Häuser</span>",
+				"contact_us": "Kontaktieren Sie uns",
+				"home": "Startseite",
+				"about_us": {
+					"title": "Über uns",
+					"content": "Capdom ist ein führender Immobilienentwickler in Polen und Deutschland, spezialisiert auf außergewöhnliche Wohn- und Gewerbeimmobilien. Verpflichtet zu höchsten Standards in Qualität und Nachhaltigkeit, ist es Capdoms Mission, innovative Projekte zu entwickeln, die die Gemeinschaften bereichern, denen sie dienen. Mit einem engagierten Expertenteam zeichnet sich Capdom in jedem Aspekt ihrer Arbeit aus, von Planung und Gestaltung bis hin zu Bau und Kundenservice."
+				},
+				"header": "Capdom Immobilien",
+				"subheader": "Der beste Ort, um Ihr <span class=\"text-green-700\">Traum</span>haus zu finden"
+			}
+		},
+		"pl": {
+			"navigation": {
+				"carousel_tab_label": "Karuzela",
+				"floor_plan_tab_label": "Plan piętra",
+				"map_tab_label": "Mapa",
+				"image_label": "Obraz",
+				"image_of_label": "z",
+				"rooms": "Pokoje",
+				"year_built": "Rok",
+				"bathrooms": "Łazienki",
+				"property_type": "Typ",
+				"bedrooms": "Sypialnie",
+				"area": "Powierzchnia",
+				"garages": "Garaże",
+				"our_houses": "Nasze <span class='text-primary'>Domy</span>",
+				"contact_us": "Skontaktuj się z nami",
+				"home": "Strona główna",
+				"about_us": {
+					"title": "O nas",
+					"content": "Capdom to wiodący deweloper nieruchomości w Polsce i Niemczech, specjalizujący się w tworzeniu wyjątkowych nieruchomości mieszkalnych i komercyjnych. Zaangażowany w najwyższe standardy jakości i zrównoważonego rozwoju, Capdom ma na celu rozwijanie innowacyjnych projektów wzbogacających społeczności, którym służą. Dzięki dedykowanemu zespołowi ekspertów Capdom wyróżnia się w każdym aspekcie swojej pracy, od planowania i projektowania po budowę i obsługę klienta."
+				},
+				"header": "Capdom Nieruchomości",
+				"subheader": "Najlepsze miejsce do znalezienia <span class=\"text-green-700\">wymarzonego</span> domu"
+			}
+		}
+	},
+	"houses": [
+		{
+			"id": 1,
+			"name": {
+				"en": "New York House 1",
+				"de": "New York Haus 1",
+				"pl": "New York Dom 1"
+			},
+			"description": {
+				"en": "Beautiful single family home in New York with swimming pool, garage, and garden.",
+				"de": "Schönes Einfamilienhaus in New York mit Swimmingpool, Garage und Garten.",
+				"pl": "Piękny dom jednorodzinny w Nowym Jorku z basenem, garażem i ogrodem."
+			},
+			"features": {
+				"en": ["Swimming Pool", "Garage", "Garden"],
+				"de": ["Schwimmbad", "Garage", "Garten"],
+				"pl": ["Basen", "Garaż", "Ogród"]
+			},
+			"property_type": {
+				"en": "House",
+				"de": "Haus",
+				"pl": "Dom"
+			},
+			"price": 100000,
+			"location": "New York",
+			"rooms": 3,
+			"bathrooms": 2,
+			"year_built": 2020,
+			"bedrooms": 1,
+			"garages": 1,
+			"area": 53,
+			"address": {
+				"en": "al. Generała Józefa Hallera 180-184, 53-203 Wrocław, Poland",
+				"pl": "al. Generała Józefa Hallera 180-184, 53-203 Wrocław, Polska",
+				"de": "al. Generała Józefa Hallera 180-184, 53-203 Breslau, Polen"
+			},
+			"coordinates": {
+				"latitude": 51.09306985492985,
+				"longitude": 16.98100106379682
+			},
+			"images": {
+				"floorPlan": "https://www.hauseit.com/wp-content/uploads/2019/08/Sample-Hauseit-Custom-2D-Floorplan-1.jpg",
+				"gallery": [
+					"https://plus.unsplash.com/premium_photo-1675324517011-24d2c741c22f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"https://images.unsplash.com/photo-1491357492920-d2979986a84e?q=80&w=1966&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"https://images.unsplash.com/photo-1605146769289-440113cc3d00?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+				]
+			}
+		},
+		{
+			"id": 2,
+			"name": {
+				"en": "New York House 2",
+				"de": "New York Haus 2",
+				"pl": "New York Dom 2"
+			},
+			"description": {
+				"en": "Beautiful single family home in New York with swimming pool, garage, and garden.",
+				"de": "Schönes Einfamilienhaus in New York mit Swimmingpool, Garage und Garten.",
+				"pl": "Piękny dom jednorodzinny w Nowym Jorku z basenem, garażem i ogrodem."
+			},
+			"features": {
+				"en": ["Swimming Pool", "Garage", "Garden"],
+				"de": ["Schwimmbad", "Garage", "Garten"],
+				"pl": ["Basen", "Garaż", "Ogród"]
+			},
+			"property_type": {
+				"en": "House",
+				"de": "Haus",
+				"pl": "Dom"
+			},
+			"price": 100000,
+			"location": "New York",
+			"rooms": 3,
+			"bathrooms": 2,
+			"year_built": 2020,
+			"bedrooms": 1,
+			"garages": 1,
+			"area": 53,
+			"address": {
+				"en": "al. Generała Józefa Hallera 180-184, 53-203 Wrocław, Poland",
+				"pl": "al. Generała Józefa Hallera 180-184, 53-203 Wrocław, Polska",
+				"de": "al. Generała Józefa Hallera 180-184, 53-203 Breslau, Polen"
+			},
+			"coordinates": {
+				"latitude": 51.09306985492985,
+				"longitude": 16.98100106379682
+			},
+			"images": {
+				"floorPlan": "https://www.hauseit.com/wp-content/uploads/2019/08/Sample-Hauseit-Custom-2D-Floorplan-1.jpg",
+				"gallery": [
+					"https://plus.unsplash.com/premium_photo-1675324517011-24d2c741c22f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"https://images.unsplash.com/photo-1491357492920-d2979986a84e?q=80&w=1966&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"https://images.unsplash.com/photo-1605146769289-440113cc3d00?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+				]
+			}
+		},
+		{
+			"id": 3,
+			"name": {
+				"en": "New York House 3",
+				"de": "New York Haus 3",
+				"pl": "New York Dom 3"
+			},
+			"description": {
+				"en": "Beautiful single family home in New York with swimming pool, garage, and garden.",
+				"de": "Schönes Einfamilienhaus in New York mit Swimmingpool, Garage und Garten.",
+				"pl": "Piękny dom jednorodzinny w Nowym Jorku z basenem, garażem i ogrodem."
+			},
+			"features": {
+				"en": ["Swimming Pool", "Garage", "Garden"],
+				"de": ["Schwimmbad", "Garage", "Garten"],
+				"pl": ["Basen", "Garaż", "Ogród"]
+			},
+			"property_type": {
+				"en": "House",
+				"de": "Haus",
+				"pl": "Dom"
+			},
+			"price": 100000,
+			"location": "New York",
+			"rooms": 3,
+			"bathrooms": 2,
+			"year_built": 2020,
+			"bedrooms": 1,
+			"garages": 1,
+			"area": 53,
+			"address": {
+				"en": "al. Generała Józefa Hallera 180-184, 53-203 Wrocław, Poland",
+				"pl": "al. Generała Józefa Hallera 180-184, 53-203 Wrocław, Polska",
+				"de": "al. Generała Józefa Hallera 180-184, 53-203 Breslau, Polen"
+			},
+			"coordinates": {
+				"latitude": 51.09306985492985,
+				"longitude": 16.98100106379682
+			},
+			"images": {
+				"floorPlan": "https://www.hauseit.com/wp-content/uploads/2019/08/Sample-Hauseit-Custom-2D-Floorplan-1.jpg",
+				"gallery": [
+					"https://plus.unsplash.com/premium_photo-1675324517011-24d2c741c22f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"https://images.unsplash.com/photo-1491357492920-d2979986a84e?q=80&w=1966&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"https://images.unsplash.com/photo-1605146769289-440113cc3d00?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+				]
+			}
+		}
+	]
+}

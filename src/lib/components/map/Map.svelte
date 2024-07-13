@@ -2,37 +2,18 @@
 	import { onMount, onDestroy } from 'svelte';
 	import { Map, NavigationControl, Marker } from 'maplibre-gl';
 	import 'maplibre-gl/dist/maplibre-gl.css';
-
-	let map;
-	let mapContainer;
-
-	const apiKey = 'ch550ZX96o98uZAGx7hS';
-	const lat = 51.095366246953624;
-	const long = 17.00940354297072;
-
-	onMount(() => {
-		const initialState = { lng: long, lat: lat, zoom: 15 };
-
-		map = new Map({
-			container: mapContainer,
-			style: `https://api.maptiler.com/maps/streets-v2/style.json?key=${apiKey}`,
-			center: [initialState.lng, initialState.lat],
-			zoom: initialState.zoom
-		});
-		map.addControl(new NavigationControl(), 'top-right');
-		new Marker({ color: '#FF0000' }).setLngLat([long, lat]).addTo(map);
-	});
-
-	onDestroy(() => {
-		map.remove();
-	});
 </script>
 
 <div class="map-wrap">
-	<a href="https://www.maptiler.com" class="watermark"
-		><img src="https://api.maptiler.com/resources/logo.svg" alt="MapTiler logo" /></a
-	>
-	<div class="map" bind:this={mapContainer}></div>
+	<iframe
+		src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2505.834058738254!2d16.9810011!3d51.093069899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTHCsDA1JzM1LjEiTiAxNsKwNTgnNTEuNiJF!5e0!3m2!1sen!2spl!4v1717865952961!5m2!1sen!2spl"
+		width="100%"
+		height="100%"
+		style="border:0;"
+		allowfullscreen=""
+		loading="lazy"
+		referrerpolicy="no-referrer-when-downgrade"
+	></iframe>
 </div>
 
 <style>

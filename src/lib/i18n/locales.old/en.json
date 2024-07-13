@@ -1,0 +1,17 @@
+{
+	"carousel_tab_label": "Carousel",
+	"floor_plan_tab_label": "Floor Plan",
+	"map_tab_label": "Map",
+	"image_label": "Image",
+	"image_of_label": "of",
+	"rooms": "Rooms",
+	"year_built": "Year",
+	"bathrooms": "Bathrooms",
+	"property_type": "Type",
+	"bedrooms": "Bedrooms",
+	"area": "Area",
+	"garages": "Garages",
+	"our_houses": "Our <span class='text-primary'>Houses</span>",
+	"contact_us": "Contact Us",
+	"home": "Home"
+}

@@ -14,10 +14,21 @@
 	import PhotoSwipe from '$lib/components/photoswipe/PhotoSwipe.svelte';
 	import PanZoom from '$lib/components/panzoom/PanZoom.svelte';
 	import InfoSide from '$lib/components/house/House.svelte';
+	import HousesSection from '$lib/components/house/HousesSection.svelte';
+	import ContactUs from '$lib/components/contactus/ContactUs.svelte';
 
-	// load data from +page.ts
+	import { register, init, getLocaleFromNavigator, addMessages, locale } from 'svelte-i18n';
+	import { t, dictionary, json } from 'svelte-i18n';
+	import { get } from 'svelte/store';
+	import AboutUs from '@/components/aboutus/AboutUs.svelte';
+	import IndexHeader from '@/components/header/IndexHeader.svelte';
+
+	/** @type {import('./$types').PageData} */
 	export let data;
-	console.log(data);
+
+	// const translations = data.translations;
+	// const houses = translations.static.houses;
+	// const housez = $dictionary;
 </script>
 
 <header class="flex h-20 w-full shrink-0 items-center px-4 md:px-6">
@@ -38,18 +49,17 @@
 </header>
 
 <main class="flex-1">
-	{#each data.houses as house, index}
-		<House infoSide={index % 2 === 0 ? 'left' : 'right'} {house} />
-		<!-- horizontal rule filling 2/3 of the width -->
-		<hr class="mx-auto my-8 w-2/3 border-t border-gray-200 dark:border-gray-700" />
-	{/each}
+	<IndexHeader />
+	<AboutUs />
+	<HousesSection {data} />
+	<ContactUs />
 </main>
 
 <footer
 	class="flex w-full shrink-0 flex-col items-center gap-2 border-t px-4 py-6 sm:flex-row md:px-6"
 >
 	<p class="text-xs text-gray-500 dark:text-gray-400">
-		© 2024 Acme Real Estate. All rights reserved.
+		© {new Date().getFullYear()} Capdom. All rights reserved.
 	</p>
 	<nav class="flex gap-4 sm:ml-auto sm:gap-6">
 		<a href="#" class="footer-link">Terms of Service</a>
